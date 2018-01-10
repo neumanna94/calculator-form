@@ -3,7 +3,7 @@ $(document).ready(function() {
     event.preventDefault();
     var num1 = parseInt($("#num1").val());
     var num2 = parseInt($("#num2").val());
-    var operator = $("#operators").val();
+    var operator = $("input:radio[name=operator]:checked").val();
     console.log(num2);
     operator = parseInt(operator);
     if(isNaN(num1)||isNaN(num2)){
@@ -27,7 +27,7 @@ $(document).ready(function() {
     } else if(operator===6) {
       result = factorial(number1, number2);
     } else {
-      result = squareRoot(number1, number2);
+      return alert("Invalid");
     }
     return result;
   }
@@ -45,9 +45,10 @@ $(document).ready(function() {
   }
   var exponential = function(x, y){
     var result = 1;
-    for(var i = 1; i < y; i++){
-      result *= result*x;
+    for(var i = 1; i <= y; i++){
+      result *= x;
     }
+    console.log(result);
     return result;
   }
   var factorial = function(number1){
