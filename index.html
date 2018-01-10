@@ -14,6 +14,26 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <form id="calculate">
+            <div class="form-group">
+              <label for="num1">1st number:</label>
+              <input id="num1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="num2">2nd number:</label>
+              <input id="num2" class="form-control" type="text">
+            </div>
+          <select class="form-control" id="operators">
+            <option value="1">Add</option>
+            <option value="2">Subtract</option>
+            <option value="3">Multiply</option>
+            <option value="4">Divide</option>
+            <option value="5">X^Y</option>
+            <option value="6">Factorial</option>
+            <option value="7">Squareroot</option>
+          </select>
+          <button type="submit" id="btn">calculate</button>
+        </form>
         </div>
       </div>
     </div>

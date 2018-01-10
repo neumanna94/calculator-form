@@ -1,0 +1,9 @@
+.jumbotron h1{
+  text-align: center;
+}
+
+#btn{
+  height: 2.5em;
+  weight: 10em;
+  border-color: black;
+}
