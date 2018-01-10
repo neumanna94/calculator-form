@@ -44,9 +44,9 @@ $(document).ready(function() {
     return number1/number2;
   }
   var exponential = function(x, y){
-    var result = 1;
+    var result = x;
     for(var i = 1; i < y; i++){
-      result *= result*x;
+      result *= x;
     }
     return result;
   }
