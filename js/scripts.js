@@ -4,8 +4,9 @@ $(document).ready(function() {
     var num1 = parseInt($("#num1").val());
     var num2 = parseInt($("#num2").val());
     var operator = $("#operators").val();
+    console.log(num2);
     operator = parseInt(operator);
-    if((num1===null||num2===null)||(num1===NaN||num2===NaN)){
+    if(isNaN(num1)||isNaN(num2)){
       alert("Please enter a number!");
     } else {
       alert(operatorSelector(operator, num1, num2));
@@ -56,9 +57,4 @@ $(document).ready(function() {
     }
     return result;
   }
-  var squareRoot = function(number1){
-    var result = 1;
-    return result;
-  }
-
 });
